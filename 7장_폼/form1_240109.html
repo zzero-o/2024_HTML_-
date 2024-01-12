@@ -1,0 +1,49 @@
+<!--폼_-->
+
+<!--input 종류 : 문자/숫자/비밀번호/라디오/체크박스/버튼-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>BOYNEXTDOOR</title>
+    </head>
+
+    <body>
+        <form>
+            <div>
+                <label for = "signup-email">이메일</label>
+            <!--label 태그 : input의 설명을 적는 칸-->
+                <input id = "signup-email"
+                     name = "email"
+                     type = "email">
+            <!--input 태그 : 입력 칸 생성-->
+            </div>
+
+            <div>
+                <label for = "signup-password">비밀번호</label>
+                <input id = "signup-password"
+                    name = "password"
+                    type = "password">
+            </div>
+
+            <div>
+                <label for = "signup-password-repeat">비밀번호 확인</label>
+                <input id = "signup-password-repeat"
+                    name = "password-repeat"
+                    type = "password">
+            </div>
+            <button type = "submit">
+                확인
+            </button>
+            <!--button 태그-->
+            <!--type 속성 : type = "submit"     내용 전송-->
+            <button type = "reset">
+                취소
+            </button>
+            <!--type 속성 : type = "reset"     내용 초기화-->
+        </form>
+        <!--form 태그 : 폼 형성-->
+    </body>
+</html>

@@ -1,0 +1,146 @@
+<!--회원가입 폼-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>회원가입</title>
+    </head>
+
+    <body>
+        <form>
+            <h2>회원가입</h2>
+        
+            <div>
+                <label>
+                    아이디 <br>
+                    <input name = "id">
+                </label>
+            </div>
+            <div>
+                <label>
+                    비밀번호 <br>
+                    <input name = "password"
+                        type = "password">
+                </label>
+            </div>
+            <div>
+                <label>
+                    비밀번호 확인 <br>
+                    <input name = "password-check"
+                        type = "password">
+                </label>
+            </div>
+            <div>
+                <label>
+                    이메일 <br>
+                    <input name = "email"
+                        type = "email">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    성별 <br>
+                    <input name = "sex"
+                        value = "1"
+                        type = "radio">
+                        남성
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input name = "sex"
+                        value = "2"
+                        type = "radio">
+                        여성
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input name = "sex"
+                        value = "0"
+                        type = "radio">
+                        밝히고 싶지 않음
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    생년월일<br>
+                    <input name = birth
+                        type = "date">
+                </label>
+            </div>
+
+            <div>
+                <label>관심사</label><br>
+                <label>
+                    <input name = "love"
+                        type = "checkbox"
+                        multiple>
+                        프로그래밍
+                </label> <br>
+                <label>
+                    <input name = "love"
+                        type = "checkbox"
+                        multiple>
+                        스포츠
+                </label><br>
+                <label>
+                    <input name = "love"
+                        type = "checkbox"
+                        multiple>
+                        영화
+                </label><br>
+                <label>
+                    <input name = "love"
+                        type = "checkbox"
+                        multiple>
+                        경제
+                </label>
+            </div>
+
+            <div>
+                <label>직업</label><br>
+                <select name = "job">
+                    <option name = "student">학생</option>
+                    <option name = "offcie">회사원</option>
+                    <option name = "self-sale">자영업</option>
+                    <option name = "teacher">교사</option>
+                    <option name = "atlete">선수</option>
+                    <option name = "musition">음악가</option>
+                    <option name = "artist">화가</option>
+                </select>
+            </div>
+
+            <div>
+                <label>프로그래밍 공부한 기간(년)</label><br>
+                <input name = "year"
+                    type = "number"
+                    min = "1"
+                    max = "20"
+                    step = "1">
+            </div>
+
+            <div>
+                <label>프로필 사진</label><br>
+                <input name = "image"
+                    type = "file"
+                    accept = ".png, .jpg">
+            </div>
+
+            <div>
+                <label>소개</label><br>
+                <textarea name = "introduce"></textarea>
+            </div>
+
+            <div>
+                <button type = "submit">
+                    가입하기
+                </button>
+            </div>
+        </form>
+    </body>
+</html>

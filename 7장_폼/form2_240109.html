@@ -1,0 +1,172 @@
+<!--폼만들기_다양한 인풋-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>BOYNEXTDOOR</title>
+    </head>
+
+    <body>
+        <p>
+            이채연은 박성호를 평생 좋아할 것을 맹세합니까?
+        </p>
+        <label>
+            <input name = "agreement"
+                type = "checkbox">
+            예
+        </label> <br><br><br>
+        <!--type 속성 값 checkbox : 한 항목만 선택하는 경우-->
+
+        <label for = "BND">내가 좋아하는 보이넥스트도어 멤버</label>
+        <label>
+            <input type = "checkbox"
+                name = "BND"
+                value = "PSH">
+            박성호
+        </label>
+
+        <label>
+            <input type = "checkbox"
+                name = "BND"
+                value = "LRW">
+            이리우
+        </label>
+
+        <label>
+            <input type = "checkbox"
+                name = "BND"
+                value = "MJH">
+            명재현
+        </label>
+
+        <label>
+            <input type = "checkbox"
+                name = "BND"
+                value = "HTS">
+            한태산
+        </label>
+
+        <label>
+            <input type = "checkbox"
+                name = "BND"
+                value = "KLH">
+            김이한
+        </label>
+
+        <label>
+            <input type = "checkbox"
+                name = "BND"
+                value = "KWH">
+            김운학
+        </label><br><br>
+        <!--type 속성값 checkbox : 여러 속성 값 선택 가능 (value로 값 지정)-->
+
+        <label>
+            오늘은 김운학 생일입니다
+            <input name = "김운학 생일"
+                type = "date">
+        </label>
+        <!--type 속성값 date : 날짜로 값 지정-->
+
+        <label>
+            <input name = "filename"
+                    type = "file"
+                    accept = ".png, .jpg">
+            <!--type 속성 값 file : 파일 형식 지정 하기-->
+            <!--multiple : 여러 개 선택 가능-->
+        </label><br><br>
+
+        <label>
+            이메일
+            <input name = "email"
+                    type = "email">
+            <!--type 속성 값 email : 올바른 이메일 형식인지 확인-->
+        </label><br><br>
+
+        <label>
+            <input type = "number"
+                min = "100"
+                max = "1000"
+                step = "100">
+            <!--type 속성 값 number : 숫자를 입력-->
+            <!--step : 버튼 눌렀을 때 증가할 양, 감소할 양을 지정할 수 있다-->
+        </label><br><br>
+
+        <h5>운학이 얼마나 좋습니까?</h5>
+        <input id = "very-bad"
+            name = "feeling"
+            value = "0"
+            type = "radio">
+        <label for = "very-bad">
+            완전 뼈 안티애오
+        </label>
+
+        <input id = "bad"
+            name = "feeling"
+            value = "1"
+            type = "radio">
+        <label for = "bad">
+            싫어해요
+        </label>
+
+        <input id = "soso"
+            name = "feeling"
+            value = "2"
+            type = "radio">
+        <label for = "soso">
+            아무 생각 업서요
+        </label>
+
+        <input id = "good"
+            name = "feeling"
+            value = "3"
+            type = "radio">
+        <label for = "good">
+            좋아요
+        </label><br>
+
+        <input id = "very-good"
+            name = "feeling"
+            value = "4"
+            type = "radio">
+        <label for = "very-good">
+            사랑해요
+        </label> <br><br>
+
+        <label>현재 기분
+            <input name = "feeling"
+                min = "1"
+                max = "10"
+                type = "range">
+        </label> <br><br>
+        <!--type 속성 = range : 범위 조정 가능-->
+
+        <label>
+            input의 기본 값
+            <input name = "nickname"
+                type = "text">
+        </label><br><Br>
+
+        <label>
+            좋아하는 사람은 누구인가요?<br><br>
+            <select name = "who">
+                <option value = "PSH">박성호</option>
+                <option value = "LRW">이리우</option>
+                <option value = "MJH">명재현</option>
+                <option value = "HTS">한태산</option>
+                <option value = "KLH">김이한</option>
+                <option value = "KWH">김운학</option>
+            </select>
+            <!--option : 선택할 요소-->
+        </label><br><br>
+        <!--select 태그 : 선택하는 창-->
+
+        <label>
+            박성호가 좋은 이유를 서술하시오 <br>
+            <textarea name = "content"></textarea>
+        </label>
+        <!--textarea 태그 : 서술 가능-->
+    </body>
+</html>
